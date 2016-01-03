@@ -4,7 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var jsEncode = require('./p2');
 var mongoose = require('mongoose');
 
 var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
@@ -39,7 +38,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function(req, res) {
-  res.render('home', { title: 'Express' });
+  res.render('index', { title: 'MiniGames' });
 });
 
 app.post('/register', function(req, res) {
