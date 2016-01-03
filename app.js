@@ -41,6 +41,10 @@ app.get('/', function(req, res) {
   res.render('index', { title: 'MiniGames' });
 });
 
+app.get('/game', function(req, res) {
+  res.render('game', { title: 'MiniGames' });
+});
+
 app.post('/register', function(req, res) {
   console.log("got to register");
   var newUser = new User({ 
