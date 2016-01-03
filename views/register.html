@@ -38,15 +38,6 @@
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
-          <ul class="nav navbar-nav pull-right">
-            {% if user %}
-              <li><a href="#">Welcome, {{ user }}</a></li>
-              <li><a href="/logout">Logout</a></li>
-            {% else %}
-              <li><a href="/login">Login</a></li>
-              <li><a href="/register">Register</a></li>
-            {% endif %}
-          </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
@@ -55,19 +46,13 @@
 
       <div class="starter-template">
         <h1>Dirty Ghetto Games</h1>
-        <!-- <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p> -->
       </div>
 
-      <div class="row">
-        <div class="col-md-4">
-          <a href="/game">
-            <img src="/img/holder.png" alt="..." class="img-rounded" style="width:300px; height:300px;">
-            <h3 style="text-align: center;">Ball Game</h3>
-          </a>
-        </div>
-        <div class="col-md-4"><img src="/img/placeholder.png" alt="..." class="img-rounded" style="width:300px; height:300px;"></div>
-        <div class="col-md-4"><img src="/img/placeholder.png" alt="..." class="img-rounded" style="width:300px; height:300px;"></div>
-      </div>
+      <form action="/register" method="post">
+        <label>Username: </label><input name="name"><br>
+        <label>Password: </label><input name="password"><br>
+        <button type="submit">Register</button>
+      </form>
 
     </div><!-- /.container -->
 
