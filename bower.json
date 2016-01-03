@@ -1,0 +1,23 @@
+{
+  "name": "minigames.tigersteez.com",
+  "description": "Minigames",
+  "main": "app.js",
+  "authors": [
+    "Connor Patterson",
+    "Hayden Fuss"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/tigersteez/minigames",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dali": "tigersteez/dali"
+  }
+}
