@@ -1,13 +1,13 @@
 {
-  "name": "Proto-two.tigersteez.com",
-  "version": "1.0.0",
-  "description": "Proto-two",
+  "name": "minigames.tigersteez.com",
+  "version": "0.0.1",
+  "description": "Minigames",
   "main": "app.js",
   "scripts": {
     "test": "test",
     "start": "node ./bin/www"
   },
-  "author": "Connor Patterson",
+  "author": "Connor Patterson, Hayden Fuss",
   "license": "ISC",
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -27,6 +27,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/npm.git"
+    "url": "https://github.com/tigersteez/minigames.git"
   }
 }
